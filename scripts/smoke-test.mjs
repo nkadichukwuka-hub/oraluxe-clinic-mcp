@@ -40,7 +40,7 @@ check("note persisted", (await call("get_enquiry", { id: first })).data.notes.le
 check("add_note", (await call("add_note", { id: first, note: "Booked for 9am" })).data.notes.length === 2);
 
 const ov = await call("clinic_overview");
-check("clinic_overview", ov.data.total === 30 && ov.data.byStatus.Contacted >= 1);
+check("clinic_overview", ov.data.total === 24 && ov.data.byStatus.Contacted >= 1 && ov.data.byStatus.Booked >= 1);
 
 await client.close();
 process.exit(failed ? 1 : 0);
