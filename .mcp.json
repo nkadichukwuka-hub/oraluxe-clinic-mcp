@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "oraluxe-clinic": {
+      "command": "node",
+      "args": ["dist/index.js"]
+    }
+  }
+}
