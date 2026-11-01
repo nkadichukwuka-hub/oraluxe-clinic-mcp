@@ -2,3 +2,5 @@ node_modules/
 dist/
 .env
 data/enquiries.local.json
+demo/
+.claude/
